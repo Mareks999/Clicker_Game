@@ -1,0 +1,15 @@
+/* Veikals (labā puse): divas cilnes */
+.shop { background: #3a3428; display: flex; flex-direction: column; padding: 12px 12px 0; box-shadow: -4px 0 10px rgba(0,0,0,.5); }
+.tabs { display: flex; gap: 4px; padding-left: 8px; }
+.tab { padding: 8px 18px; border: 1px solid #1b1810; border-bottom: none; border-radius: 6px 6px 0 0; background: #6d6350; color: #e9e3d0; cursor: pointer; text-transform: uppercase; }
+.tab.active { background: var(--paper); color: var(--ink); }
+.sheet { flex: 1; overflow-y: auto; margin-bottom: 12px; padding: 6px 12px; background: var(--paper); color: var(--ink); text-align: left; font-family: "Courier New", monospace; }
+.sheet [hidden] { display: none; }
+.upgrade { display: flex; align-items: center; gap: 10px; padding: 9px 0; border-bottom: 1px dashed #8f866c; }
+.no { flex: none; width: 22px; text-align: center; font-weight: bold; color: #8a2b1a; border: 1px solid #8a2b1a; }
+.up-info { flex: 1; min-width: 0; }
+.up-info small { display: block; font-size: 11px; color: #5a5343; }
+.lvl { font-weight: normal; color: #6b6450; }
+.buy { flex: none; min-width: 76px; padding: 7px 6px; font-weight: bold; color: #1d3f9a; background: none; border: 2px solid #1d3f9a; cursor: pointer; }
+.upgrade.poor .buy { color: #8a8570; border-color: #8a8570; }
+.buy:disabled { color: #333; border-color: #333; border-style: dotted; }
