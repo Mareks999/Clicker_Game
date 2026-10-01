@@ -1,6 +1,6 @@
 "use strict";
 
-// ---- Formulas, kas pārvērš uzlabojumu līmeņus naudā ----
+
 const multiplier   = () => 1 + 0.25 * L("contracts");
 const bonusActive  = () => Date.now() < bonusEndsAt;
 const bonusFactor  = () => bonusActive() ? 2 : 1;

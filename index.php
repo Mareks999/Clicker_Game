@@ -1,6 +1,6 @@
 <?php
 session_start();
-// Sesija atceras pēdējo spēlētāju, lai pēc lapas pārlādes nav jāievada vārds no jauna
+
 $player = $_SESSION['player'] ?? '';
 ?>
 <!DOCTYPE html>
@@ -10,7 +10,9 @@ $player = $_SESSION['player'] ?? '';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Truck Clicker</title>
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/hud.css">
     <link rel="stylesheet" href="css/truck.css">
+    <link rel="stylesheet" href="css/effects.css">
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="css/settings.css">
 </head>

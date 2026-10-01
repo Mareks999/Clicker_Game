@@ -1,6 +1,6 @@
 "use strict";
 
-// ---- Veikals: divas sadaļas (Flote / Uzlabojumi) ----
+
 function buildShop() {
   for (const [listId, defs] of [["fleetList", FLEET], ["upgradesList", UPGRADES]]) {
     const list = $(listId);

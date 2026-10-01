@@ -1,6 +1,6 @@
 "use strict";
 
-// ---- Iestatījumi, spēlētāja vārda ekrāns un spēles palaišana ----
+
 $("volume").value = volume;
 $("mute").checked = muted;
 $("volume").oninput = e => { volume = parseFloat(e.target.value); localStorage.setItem("volume", volume); };
@@ -40,7 +40,7 @@ async function startAs(name) {
 $("startButton").onclick = () => startAs($("nameInput").value);
 $("nameInput").onkeydown = e => { if (e.key === "Enter") startAs($("nameInput").value); };
 
-// ---- Sākums ----
+
 buildShop();
 updateUI();
 setInterval(saveGame, AUTOSAVE_MS);

@@ -1,6 +1,6 @@
 "use strict";
 
-// ---- Punkti, transformācijas, klikšķis un flotes ienākumi ----
+
 function addPoints(amount) {
   state.points += amount;
   state.totalEarned += amount;
@@ -52,7 +52,7 @@ function restartAuto() {
   autoTimer = setInterval(() => { if (fleetPerTick() > 0) addPoints(Math.round(fleetPerTick() * multiplier() * bonusFactor())); }, autoInterval());
 }
 
-// ---- Nakts maiņa (laika bonuss) ----
+
 $("bonusButton").addEventListener("click", () => {
   const now = Date.now();
   if (L("shift") < 1 || bonusActive() || now < bonusReadyAt) return;

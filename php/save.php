@@ -1,5 +1,5 @@
 <?php
-// Saglabā spēlētāja progresu failā data/saves/<hash>.json
+
 require __DIR__ . '/config.php';
 session_start();
 

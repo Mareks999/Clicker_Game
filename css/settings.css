@@ -1,7 +1,49 @@
-/* Iestatījumi / vārda ievades logs */
-.settings-menu { display: none; position: fixed; inset: 0; background: rgba(0,0,0,.65); justify-content: center; align-items: center; z-index: 200; }
-.settings-box { width: 300px; max-width: 90vw; padding: 24px 26px; background: var(--paper); color: var(--ink); border: 3px solid #111; font-family: "Courier New", monospace; }
-.settings-box h2 { margin: 0 0 14px; font: 24px Impact, sans-serif; text-transform: uppercase; }
-.settings-box label { display: block; margin: 10px 0; }
-.settings-box input[type=text] { width: 100%; padding: 10px; border: 2px solid #111; }
-.settings-box button { display: block; width: 100%; margin: 8px 0; padding: 10px; color: #eee; background: var(--steel); border: none; border-bottom: 3px solid #000; cursor: pointer; text-transform: uppercase; }
+.settings-menu {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+.settings-box {
+    width: 300px;
+    max-width: 90vw;
+    padding: 24px 26px;
+    background: var(--paper);
+    color: var(--ink);
+    border: 3px solid #111;
+    font-family: "Courier New", monospace;
+}
+
+.settings-box h2 {
+    margin: 0 0 14px;
+    font: 24px Impact, sans-serif;
+    text-transform: uppercase;
+}
+
+.settings-box label {
+    display: block;
+    margin: 10px 0;
+}
+
+.settings-box input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #111;
+}
+
+.settings-box button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    color: #eee;
+    background: var(--steel);
+    border: none;
+    border-bottom: 3px solid #000;
+    cursor: pointer;
+    text-transform: uppercase;
+}

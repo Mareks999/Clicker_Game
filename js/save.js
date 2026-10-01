@@ -1,6 +1,5 @@
 "use strict";
 
-// ---- Saglabāšana un ielāde (PHP) ----
 function payload() { return JSON.stringify({ name: playerName, state }); }
 
 async function saveGame() {

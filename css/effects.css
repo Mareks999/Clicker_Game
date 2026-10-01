@@ -1,0 +1,49 @@
+.floater {
+    position: fixed;
+    z-index: 50;
+    pointer-events: none;
+    font: bold 22px "Courier New", monospace;
+    color: #fff;
+    text-shadow: 0 2px 3px #000;
+    animation: fade 0.9s ease-out forwards;
+}
+
+@keyframes fade {
+    to {
+        opacity: 0;
+    }
+}
+
+#banner {
+    position: fixed;
+    top: 14px;
+    left: 50%;
+    transform: translate(-50%, -120px);
+    padding: 12px 24px;
+    background: var(--yellow);
+    color: #111;
+    font: bold 15px Impact, sans-serif;
+    text-transform: uppercase;
+    border: 3px solid #111;
+    z-index: 300;
+    transition: transform 0.35s;
+}
+
+#banner.show {
+    transform: translate(-50%, 0);
+}
+
+body.bonus-on::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: #000;
+    opacity: 0.55;
+    z-index: -1;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+body.bonus-on .plate-num {
+    background: #ffe082;
+}

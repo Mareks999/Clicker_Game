@@ -1,0 +1,65 @@
+.plate {
+    margin-top: 18px;
+    display: inline-flex;
+    background: #f4f4ee;
+    border: 3px solid #111;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.plate-eu {
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    background: #1d3f9a;
+    color: #fff;
+    font-weight: bold;
+}
+
+.plate-num {
+    padding: 4px 18px;
+    font: bold 40px "Courier New", monospace;
+    color: #111;
+}
+
+.stats,
+.odo,
+#status {
+    font-family: "Courier New", monospace;
+    text-shadow: 0 1px 4px #000, 0 0 6px #000;
+}
+
+.stats {
+    margin-top: 6px;
+    min-height: 18px;
+}
+
+#status {
+    min-height: 16px;
+}
+
+.odo {
+    width: 300px;
+    max-width: 90%;
+    margin-top: 6px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.odo-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.odo-bar {
+    height: 10px;
+    background: #0c0c0c;
+    border: 1px solid #555;
+    padding: 1px;
+}
+
+#progressBar {
+    height: 100%;
+    background: var(--yellow);
+    transition: width 0.25s;
+}

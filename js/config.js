@@ -1,16 +1,15 @@
 "use strict";
 
-// ---- Flote: pelna naudu pati, bez klikšķiem ----
 const FLEET = {
   driver:  { name: "Šoferis",               out: 1,    base: 30,     growth: 1.15 },
   van:     { name: "Furgons",               out: 5,    base: 220,    growth: 1.15 },
   trailer: { name: "Piekabe",               out: 25,   base: 1600,   growth: 1.15 },
   depot:   { name: "Depo",                  out: 130,  base: 12000,  growth: 1.15 },
   route:   { name: "Starppilsētu maršruts", out: 700,  base: 90000,  growth: 1.15 },
-  port:    { name: "Ostas termināls",       out: 4000, base: 700000, growth: 1.15 },
+  port:    { name: "Ostas terminālis",       out: 4000, base: 700000, growth: 1.15 },
 };
 
-// Uzlabojumi: maina klikšķa un flotes vērtību
+
 const UPGRADES = {
   engine:    { name: "Jaudīgāks dzinējs", desc: "+1 € par klikšķi",          base: 15,   growth: 1.45, max: 999 },
   tires:     { name: "Riepas",            desc: "+10% klikšķa ieņēmumiem",   base: 1500, growth: 1.9,  max: 10 },
@@ -20,11 +19,10 @@ const UPGRADES = {
   shift:     { name: "Nakts maiņa",       desc: "Uz laiku dubulti ieņēmumi", base: 600,  growth: 2.0,  max: 8 },
 };
 
-// Auto izskats mainās pēc kopā nopelnītās naudas (7 transformācijas)
 const STAGES = [
   { at: 0,          name: "Vecais rūsganis" },
   { at: 1500,       name: "Nomazgāts un spodrs" },
-  { at: 15000,      name: "Hromēts lielceļu zvērs" },
+  { at: 15000,      name: "Lielceļu zvērs" },
   { at: 150000,     name: "Jauns dzinējs zem pārsega" },
   { at: 1500000,    name: "Tālbraucēja lepnums" },
   { at: 15000000,   name: "Turbo fūrmanis" },

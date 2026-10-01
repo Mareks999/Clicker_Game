@@ -1,5 +1,5 @@
 <?php
-// Kopīgas funkcijas save.php un load.php failiem
+
 const SAVE_DIR = __DIR__ . '/../data/saves/';
 const UPGRADE_KEYS = ['engine', 'tires', 'turbo', 'contracts', 'crit', 'shift', 'driver', 'van', 'trailer', 'depot', 'route', 'port'];
 
@@ -18,7 +18,7 @@ function save_path(string $name): string {
     return SAVE_DIR . sha1(mb_strtolower($name)) . '.json';
 }
 
-// Pārbauda spēles stāvokli, ko atsūtījis pārlūks, lai fails nesatur neko bīstamu
+
 function clean_state($state): ?array {
     if (!is_array($state)) return null;
     $clean = [

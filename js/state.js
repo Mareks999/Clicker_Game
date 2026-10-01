@@ -1,6 +1,5 @@
 "use strict";
 
-// ---- Kopīgais spēles stāvoklis un palīgfunkcijas, ko izmanto pārējie faili ----
 let state = { points: 0, totalEarned: 0, levels: {} };
 [...Object.keys(FLEET), ...Object.keys(UPGRADES)].forEach(k => state.levels[k] = 0);
 
@@ -11,8 +10,8 @@ let autoTimer = null;
 let volume = parseFloat(localStorage.getItem("volume") ?? "0.6");
 let muted = localStorage.getItem("muted") === "1";
 
-const $ = id => document.getElementById(id);          // īsceļš document.getElementById vietā
-const L = key => state.levels[key];                   // konkrēta uzlabojuma līmenis
+const $ = id => document.getElementById(id);          
+const L = key => state.levels[key];                   
 
 function resetState() {
   state = { points: 0, totalEarned: 0, levels: {} };
